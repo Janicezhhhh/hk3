@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}       %中文
+\usepackage{microtype}        %排版相关
+\usepackage[american]{babel}  %排版相关
+\usepackage{amsmath}          %数学公式
+\usepackage{amssymb}          %数学公式
+\usepackage{cite}%引用
+\usepackage[numbers,sort&compress]{natbib}
+   \title{作业三：Linux工作环境介绍}
+   \author{Janice\_zh}
+   \date{\today}
+   
+\begin{document}
+	\maketitle   %加标题
+	\renewcommand{\contentsname}{目录}
+	\tableofcontents  %加目录
+	\section{简介说明}
+个人Linux工作环境的简单介绍.
+	\section{基本信息}
+\begin{verbatim}
+	Distributor ID:	Ubuntu
+	Description:	Ubuntu 16.04.7 LTS
+	Release:	16.04
+	Codename:	xenial
+\end{verbatim}  
+	\section{配置准备}
+	\subsection{软件安装及扩展包下载}
+ 进行了synaptic、fcitx、doxygen、emacs、TeXstudio、ssh等系列软件和扩展包的下载和安装，使系统具备基本的文件管理、文本编辑能力、语言环境设置能力和远程链接能力等基本功能。\cite{R}
+	 \subsection{环境配置}
+	 \subsubsection{中文输入环境}
+	 在emacs相关配置文件中``利用alias emacs=`LC\_CTYPE=zh\_CN.U
+	 TF-8 emacs'''命令创建了舒适的中文输入环境
+	 \subsubsection{远程连接相关配置}安装git,完成ssh相关配置，实现对gitee、github、指定远程服务器等平台的远程连接。
+	 \subsection{个性调整}经过相关文档搜索，在界面整体大小、字体、字号、颜色、背景等方面对工作环境进行自定义调整。
+	 \subsection{其他配置}
+	 在实际工作中，根据工作需要和出现的问题，进行配置的补充与调整。
+	\section{工作规划}
+	\subsection{未来半年内使用Linux工作环境的使用场合}
+	   \paragraph{(1)}《数值分析》课程以及后续《微分方程数值解》课程的学习过程中。
+	   \paragraph{(2)}srtp项目中远程连接服务器进行模型测试与数据处理。
+	   \paragraph{(3)}继续与团队成员合作完成github上某开源项目的开发。
+	  \subsection{对当前工作环境的评估}
+	  	   \paragraph{(1)}当前环境基本符合未来工作要求，已具备相关基础功能。
+	  	   \paragraph{(2)}个性化配置可以继续优化调整。
+	  	   \paragraph{(3)}Linux和git的相关操作可以进一步熟悉。
+	  	   \paragraph{(4)}在工作中结合实际进行补充与调整。
+	 \section{风险规避}
+	        \paragraph{(1)}坚持随时保存的良好习惯。
+	        \paragraph{(2)}避免对工作环境的频繁修改，找到舒适的环境后固定即可，以保证工作时以及工作结果的稳定与安全。
+	        \paragraph{(3)}代码利用git备份。
+	        \paragraph{(4)}文档利用坚果云等商业云盘备份。
+	        \paragraph{(5)}定期对工作结果进行整理，了解你的文件。   
+	           
+\bibliographystyle{refstyle}
+\bibliography{ref}
+
+
+\end{document}
